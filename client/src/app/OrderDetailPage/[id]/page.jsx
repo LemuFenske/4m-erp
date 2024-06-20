@@ -24,6 +24,7 @@ export default function OrderDetailPage({ params }) {
   return (
     <div>
       <NavBar />
+      <div className="h-28"></div>
       <OrderDetail id={id} />
     </div>
   );

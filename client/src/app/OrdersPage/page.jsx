@@ -26,6 +26,7 @@ export default function OrdersPage() {
       <NavBar className=''/>
       <div className="h-28"></div>
       <OrderList className=''/>
+      <div className="h-10"></div>
     </div>
   );
 }

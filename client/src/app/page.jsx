@@ -69,7 +69,7 @@ const Home = () => {
         className='flex items-center'
         style={{
           overlay: {
-            backgroundColor: 'rgba(0, 0, 0, 0.75)',
+            backgroundColor: 'rgba(0, 0, 0, 0.80)',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -79,7 +79,7 @@ const Home = () => {
             width: '300px',
             margin: 'auto',
             backgroundColor: 'rgba(255, 255, 255, 0.9)',
-            borderRadius: '8px',
+            borderRadius: '0px',
             padding: '20px',
             display: 'flex',
             flexDirection: 'column',
@@ -100,13 +100,13 @@ const Home = () => {
             type="password"
             value={password}
             onChange={handlePasswordChange}
-            className="border mt-4 p-2"
+            className="border border-gray-300 shadow-sm mt-4 p-2"
           />
           {error && <p className="text-red-600 mt-2">{error}</p>}
           <div className="mt-4">
             <button 
               onClick={handleSubmit} 
-              className="bg-black text-yellow-600 font-bold py-2 px-4 transition duration-300 ease-in-out transform hover:scale-105"
+              className="bg-black shadow-md text-yellow-600 font-bold py-2 px-4 transition duration-300 ease-in-out transform hover:scale-105"
               disabled={loading}
             >
               {loading ? (

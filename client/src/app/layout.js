@@ -6,6 +6,11 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: '4M ERP',
   description: 'Created by Lemuel Fenske',
+  manifest: '/manifest.json',
+  icons: {
+    apple: '/icon.png'
+  },
+  themeColor: '#000000'
 }
 
 export default function RootLayout({ children }) {
